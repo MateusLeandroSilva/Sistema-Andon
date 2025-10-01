@@ -1,4 +1,4 @@
-# Definir estoque inicial
+# Definir estoque 
 while True:
     try:
         Estoque = int(input("Defina o estoque inicial: "))
@@ -9,9 +9,9 @@ while True:
     except ValueError:
         print("Por favor, digite um número válido.")
 
-# Calcular limites do sistema Andon
-limite_amarelo = Estoque * 0.50   # 50%
-limite_vermelho = Estoque * 0.15  # 15%
+
+limite_amarelo = Estoque * 0.50   
+limite_vermelho = Estoque * 0.15 
 
 while True:
     try:
@@ -20,7 +20,7 @@ while True:
 
         Estoque -= Saida  
 
-        # Sistema Andon
+      
         if Estoque >= limite_amarelo:
             print("✅ Luz Verde")
         elif Estoque >= limite_vermelho:
@@ -36,3 +36,4 @@ while True:
 
     except ValueError:
         print("Por favor, digite um número válido.")
+
