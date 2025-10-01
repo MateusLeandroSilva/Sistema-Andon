@@ -22,4 +22,43 @@ Este projeto implementa um sistema simples de controle de estoque em Python, uti
 5. O programa encerra quando o estoque chega a zero.
 
 ## Exemplo de uso
+Defina o estoque inicial: 500
+
+Seja Bem-Vindo ao IM-date
+Quantidade de peças retiradas: 100
+Luz Verde
+Peças restantes: 400
+
+Quantidade de peças retiradas: 200
+Luz Amarela
+Peças restantes: 200
+
+Quantidade de peças retiradas: 190
+Luz Vermelha
+Peças restantes: 10
+
+Quantidade de peças retiradas: 10
+Estoque esgotado!
+
+
+## Tecnologias utilizadas
+
+- Python 3
+
+## Estrutura do código
+
+- Definição do estoque inicial.
+- Cálculo dos limites de atenção (amarelo) e crítico (vermelho).
+- Loop principal:
+  - Entrada do usuário (quantidade retirada).
+  - Atualização do saldo de estoque.
+  - Exibição do status.
+  - Verificação de esgotamento.
+
+## Possíveis melhorias
+
+- Permitir adição de peças ao estoque.
+- Registro de movimentações em arquivo de log.
+- Criação de interface gráfica para visualização dos níveis de estoque.
+
 
